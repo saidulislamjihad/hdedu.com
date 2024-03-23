@@ -138,94 +138,6 @@ main {
 }
 /* Section title css End */
 
-/*Banner section css start*/
-.banner-section {
-    background: url(../images/slider2.jpg);
-    padding: 70px 0px;
-    text-align: center;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-}
-.banner-section:after {
-    content: "";
-    position: absolute;
-    background: #000;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.4;
-}
-
-.banner-content-wrapper .banner-title {
-    font-size: 30px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
-.banner-content-wrapper .banner-item {
-    display: inline-block;
-    background: transparent;
-    margin: 0;
-    padding: 10px 20px;
-    position: relative;
-    z-index: 1;
-}
-
-.banner-content-wrapper .banner-item li {
-    display: inline-block;
-    font-weight: 600;
-}
-
-.banner-content-wrapper .banner-item li a {
-    color: #ffffff;
-}
-
-.banner-content-wrapper .banner-item:after {
-    content: "";
-    background: #000000;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 5px;
-    z-index: -1;
-    opacity: 0.6;
-}
-
-.banner-content-wrapper .banner-item li:before {
-    content: "\f111";
-    font-size: 10px;
-    font-weight: 500;
-    color: #FF7E16;
-    font-family: "Font Awesome 5 Free";
-    padding: 0 10px;
-    position: relative;
-    top: -2px;
-}
-
-.banner-content-wrapper .banner-item li:first-child::before {
-    content: '';
-    padding: 0;
-}
-
-.banner-content-wrapper .banner-item li a i {
-    color: #FF7E16;
-    margin-right: 5px;
-}
-
-.banner-content-wrapper .banner-item li.active a {
-    color: #ccc;
-}
-/*Banner section css End*/
-
 /*Header css start*/
 .header-section {
     position: absolute;
@@ -1273,6 +1185,83 @@ main {
     transition: 0.7s alternate;
 }
 /* Faq section css End */
+
+/* About page css start */
+.home-about-section.about-page {
+    padding-top: 140px;
+}
+
+.home-about-section.about-page .section-outer {
+    margin-bottom: 20px;
+}
+
+.home__about-info-wrap .about-list {
+    margin-top: 30px;
+}
+
+.about__list-item {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.about__list-item i {
+    margin-right: 7px;
+    font-size: 18px;
+    color: var(--primary-color);
+}
+/* About page css End */
+
+/* Chose section css start */
+.chose-section {
+    margin-top: 60px;
+    background: #82b6d7;
+}
+
+.chose__items-content-wrap {
+    padding: 40px;
+}
+
+.chose__items-content-outer {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.chose__items-content-wrap .section-outer {
+    text-align: start;
+}
+
+.chose__items-content-icon-outer {
+    margin-right: 15px;
+}
+
+.chose__items-content-icon {
+    width: 50px;
+}
+
+.chose__items-content-wrap .section__title {
+    color: #fff;
+}
+
+.chose__items-content-wrap .section__text {
+    color: #FFF;
+}
+
+.chose__items-content-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.chose__items-content-text,.chose__items-content-text * {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--secondary-color);
+}
+/* Chose section css End */
 
 
 /*Footer section css start*/
